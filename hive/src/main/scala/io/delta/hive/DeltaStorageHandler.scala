@@ -23,7 +23,7 @@ import scala.collection.mutable
 
 import org.apache.hadoop.fs.Path
 import org.apache.hadoop.hive.metastore.HiveMetaHook
-import org.apache.hadoop.hive.metastore.MetaStoreUtils
+import org.apache.hadoop.hive.metastore.utils.MetaStoreUtils
 import org.apache.hadoop.hive.metastore.api.MetaException
 import org.apache.hadoop.hive.metastore.api.Table
 import org.apache.hadoop.hive.metastore.api.hive_metastoreConstants.META_TABLE_LOCATION

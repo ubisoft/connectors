@@ -74,7 +74,7 @@ class DeltaInputFormat(realInput: ParquetInputFormat[ArrayWritable])
       reporter: Reporter): RecordReader[NullWritable, ArrayWritable] = {
     split match {
       case deltaSplit: DeltaInputSplit =>
-        if (Utilities.getUseVectorizedInputFileFormat(job)) {
+        if (Utilities.getIsVectorized(job)) {
           throw new UnsupportedOperationException(
             "Reading Delta tables using Parquet's VectorizedReader is not supported")
         } else {
